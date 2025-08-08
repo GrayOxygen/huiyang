@@ -204,7 +204,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2025-08-08 11:32:12" itemprop="dateModified" datetime="2025-08-08T11:32:12+01:00">2025-08-08</time>
+                <time title="Modified: 2025-08-08 11:44:58" itemprop="dateModified" datetime="2025-08-08T11:44:58+01:00">2025-08-08</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -231,13 +231,14 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <p>&#x672C;&#x6587;&#x4ECB;&#x7ECD;&#x5982;&#x4F55;&#x7528;ditto&#x6784;&#x5EFA;wiki&#x9759;&#x6001;&#x7AD9;&#x70B9;&#xFF0C;&#x53D1;&#x5E03;&#x5230;github pages&#x53EF;&#x968F;&#x65F6;&#x968F;&#x5730;&#x8FDB;&#x884C;&#x8BBF;&#x95EE;&#xFF0C;ditto&#x6784;&#x5EFA;&#x7684;wiki&#x652F;&#x6301;&#x7AD9;&#x5185;&#x67E5;&#x8BE2;&#x548C;&#x5728;&#x7EBF;&#x7F16;&#x8F91;&#xFF0C;&#x9002;&#x5408;&#x642D;&#x5EFA;&#x4E2A;&#x4EBA;wiki&#x3002;</p>
-<h2 id="&#x51E0;&#x79CD;wiki&#x642D;&#x5EFA;&#x6280;&#x672F;&#x7684;&#x6BD4;&#x8F83;"><a href="#&#x51E0;&#x79CD;wiki&#x642D;&#x5EFA;&#x6280;&#x672F;&#x7684;&#x6BD4;&#x8F83;" class="headerlink" title="&#x51E0;&#x79CD;wiki&#x642D;&#x5EFA;&#x6280;&#x672F;&#x7684;&#x6BD4;&#x8F83;"></a>&#x51E0;&#x79CD;wiki&#x642D;&#x5EFA;&#x6280;&#x672F;&#x7684;&#x6BD4;&#x8F83;</h2><p>&#x5728;&#x4F7F;&#x7528;ditto&#x4E4B;&#x524D;&#x6211;&#x8FD8;&#x5C1D;&#x8BD5;&#x4E86;xwiki&#xFF0C;gollum&#xFF0C;MDWiki&#xFF0C;xwiki&#x504F;&#x5411;&#x4F01;&#x4E1A;&#x7EA7;&#xFF0C;&#x5F53;&#x65F6;&#x8003;&#x8651;&#x5230;github pages&#x63D0;&#x4F9B;&#x514D;&#x8D39;&#x7684;&#x9759;&#x6001;&#x7AD9;&#x70B9;&#x53D1;&#x5E03;&#x4EE5;&#x53CA;&#x4E2A;&#x4EBA;wiki&#x7684;&#x7B80;&#x6D01;&#x6027;&#xFF0C;&#x5C31;&#x6700;&#x7EC8;&#x4F7F;&#x7528;&#x4E86;hexo&#x3002;MDWiki&#x8DDF;ditto&#x7C7B;&#x4F3C;&#xFF0C;&#x90FD;&#x662F;&#x901A;&#x8FC7;&#x4E00;&#x4E2A;html&#x6765;&#x5904;&#x7406;&#x5199;&#x4F5C;&#x597D;&#x7684;markdown&#x6587;&#x4EF6;&#xFF0C;&#x4F46;&#x662F;ditto&#x7684;&#x5E03;&#x5C40;&#x66F4;&#x7B80;&#x6D01;&#xFF0C;&#x642D;&#x5EFA;&#x7B80;&#x5355;&#xFF0C;&#x7528;github pages&#x5C31;&#x80FD;&#x53D1;&#x5E03;&#x5230;&#x516C;&#x7F51;&#x4E86;&#x3002;</p>
-<h2 id="&#x4E0B;&#x8F7D;ditto"><a href="#&#x4E0B;&#x8F7D;ditto" class="headerlink" title="&#x4E0B;&#x8F7D;ditto"></a>&#x4E0B;&#x8F7D;ditto</h2><blockquote>
-<p>&#x6267;&#x884C;&#x547D;&#x4EE4; <code>curl -L https://git.io/v6T7r &gt; install.sh &amp;&amp; sh install.sh</code> </p>
+          <p>本文介绍如何用ditto构建wiki静态站点，发布到github pages可随时随地进行访问，ditto构建的wiki支持站内查询和在线编辑，适合搭建个人wiki。</p>
+<h2 id="几种wiki搭建技术的比较"><a href="#几种wiki搭建技术的比较" class="headerlink" title="几种wiki搭建技术的比较"></a>几种wiki搭建技术的比较</h2><p>在使用ditto之前我还尝试了xwiki，gollum，MDWiki，xwiki偏向企业级，当时考虑到github pages提供免费的静态站点发布以及个人wiki的简洁性，就最终使用了hexo。MDWiki跟ditto类似，都是通过一个html来处理写作好的markdown文件，但是ditto的布局更简洁，搭建简单，用github pages就能发布到公网了。</p>
+<h2 id="下载ditto"><a href="#下载ditto" class="headerlink" title="下载ditto"></a>下载ditto</h2><blockquote>
+<p>执行命令 <code>curl -L https://git.io/v6T7r &gt; install.sh &amp;&amp; sh install.sh</code> </p>
 </blockquote>
 <blockquote>
-<p>ditto&#x76F8;&#x5173;&#x7684;&#x6587;&#x4EF6;&#x4F1A;&#x4E0B;&#x8F7D;&#x5230;&#x5F53;&#x524D;&#x76EE;&#x5F55;&#xFF0C;&#x5177;&#x4F53;&#x5305;&#x542B;&#x4E86;&#xFF1A;</p>
+<p>ditto相关的文件会下载到当前目录，具体包含了：</p>
+</blockquote>
 <ul>
 <li>sidebar.md</li>
 <li>install.sh</li>
@@ -248,55 +249,58 @@
 </ul>
 </li>
 </ul>
-</blockquote>
 <blockquote>
-<p>sidebar.md&#x662F;&#x4FA7;&#x8FB9;&#x680F;&#xFF0C;install.sh&#x542F;&#x52A8;&#x7A0B;&#x5E8F;&#xFF0C;&#x542F;&#x52A8;&#x4F1A;&#x81EA;&#x52A8;&#x751F;&#x6210;&#x4E0A;&#x8FF0;&#x6587;&#x4EF6;&#xFF0C;&#x670D;&#x52A1;&#x5668;&#x9ED8;&#x8BA4;&#x8BBF;&#x95EE;&#x7684;&#x4E3B;&#x9875;&#x9762;&#x5373;index.html&#xFF0C;docs&#x6709;api.md&#x548C;faq.md&#xFF0C;&#x53EA;&#x662F;&#x4F8B;&#x5B50;&#xFF0C;&#x5177;&#x4F53;&#x662F;&#x5728;sidebar.md&#x5F15;&#x5165;&#x94FE;&#x63A5;&#xFF0C;<a href></a>&#x5F15;&#x5165;&#x94FE;&#x63A5;&#x65F6;&#x4E0D;&#x7528;&#x5199;&#x540E;&#x7F00;&#x540D;&#xFF0C;&#x4F1A;&#x81EA;&#x52A8;&#x52A0;&#x4E0A;&#x7684;&#x3002;</p>
+<p>sidebar.md是侧边栏，install.sh启动程序，启动会自动生成上述文件，服务器默认访问的主页面即index.html，docs有api.md和faq.md，只是例子，具体是在sidebar.md引入链接，<a href=""></a>引入链接时不用写后缀名，会自动加上的。</p>
 </blockquote>
-<h2 id="&#x5199;&#x4F5C;"><a href="#&#x5199;&#x4F5C;" class="headerlink" title="&#x5199;&#x4F5C;"></a>&#x5199;&#x4F5C;</h2><blockquote>
-<p>&#x6211;&#x4EEC;&#x5728;docs&#x4E0B;&#x9762;&#x521B;&#x5EFA;&#x8981;&#x5199;&#x4F5C;&#x7684;markdown&#x6587;&#x4EF6;&#xFF0C;&#x6211;&#x7528;sublime text 3&#x6765;&#x8FDB;&#x884C;markdown&#x7684;&#x5199;&#x4F5C;&#xFF0C;&#x9700;&#x88C5;markdown&#x76F8;&#x5173;&#x63D2;&#x4EF6;</p>
+<h2 id="写作"><a href="#写作" class="headerlink" title="写作"></a>写作</h2><blockquote>
+<p>我们在docs下面创建要写作的markdown文件，我用sublime text 3来进行markdown的写作，需装markdown相关插件</p>
 </blockquote>
-<h2 id="&#x8FD0;&#x884C;&#x670D;&#x52A1;&#x5668;"><a href="#&#x8FD0;&#x884C;&#x670D;&#x52A1;&#x5668;" class="headerlink" title="&#x8FD0;&#x884C;&#x670D;&#x52A1;&#x5668;"></a>&#x8FD0;&#x884C;&#x670D;&#x52A1;&#x5668;</h2><blockquote>
-<p>&#x6211;&#x5728;win7&#x7CFB;&#x7EDF;&#x5B89;&#x88C5;&#x4E86;python&#xFF0C;&#x5728;&#x5DE5;&#x7A0B;&#x6839;&#x76EE;&#x5F55;&#x4E0B;&#x6253;&#x5F00;git bash&#x6216;&#x8005;&#x5176;&#x4ED6;&#x547D;&#x4EE4;&#x884C;&#x7A97;&#x53E3;&#x6267;&#x884C;server&#x547D;&#x4EE4;&#x8FD0;&#x884C;wiki&#xFF0C;cmd&#x7528;python.exe -m  http.server 8000&#x53EF;&#x5F00;&#x542F;&#x6307;&#x5B9A;&#x7AEF;&#x53E3;(&#x6B64;&#x5904;&#x8BBE;&#x7F6E;&#x4E3A;8000)&#x7684;&#x670D;&#x52A1;&#x5668;&#xFF0C;&#x65B9;&#x4FBF;&#x5FEB;&#x901F;&#x67E5;&#x770B;&#x672C;&#x5730;&#x6548;&#x679C;&#x3002;&#x53EF;&#x7528;&#x5176;&#x4ED6;&#x670D;&#x52A1;&#x5668;&#x3002;</p>
+<h2 id="运行服务器"><a href="#运行服务器" class="headerlink" title="运行服务器"></a>运行服务器</h2><blockquote>
+<p>我在win7系统安装了python，在工程根目录下打开git bash或者其他命令行窗口执行server命令运行wiki，cmd用python.exe -m  http.server 8000可开启指定端口(此处设置为8000)的服务器，方便快速查看本地效果。可用其他服务器。</p>
 </blockquote>
-<h2 id="&#x90E8;&#x7F72;&#x53D1;&#x5E03;"><a href="#&#x90E8;&#x7F72;&#x53D1;&#x5E03;" class="headerlink" title="&#x90E8;&#x7F72;&#x53D1;&#x5E03;"></a>&#x90E8;&#x7F72;&#x53D1;&#x5E03;</h2><blockquote>
-<p>&#x4E0A;&#x8FF0;&#x6B65;&#x9AA4;&#x5DF2;&#x5B8C;&#x6210;wiki&#x7684;&#x642D;&#x5EFA;&#x548C;&#x8FD0;&#x884C;&#xFF0C;&#x73B0;&#x5728;&#x9700;&#x8981;&#x90E8;&#x7F72;&#x53D1;&#x5E03;&#x5230;github&#x4E0A;&#x3002;<br>&#x9996;&#x5148;&#x4F60;&#x5F97;&#x6709;github&#x8D26;&#x53F7;&#xFF0C;&#x5728;&#x4E0A;&#x9762;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;srepository&#xFF0C;&#x7136;&#x540E;clone&#x5230;&#x672C;&#x5730;&#xFF0C;&#x5373;&#x4F60;&#x7684;&#x672C;&#x5730;&#x5DE5;&#x7A0B;&#xFF0C;&#x672C;&#x5730;&#x5DE5;&#x7A0B;&#x4E2D;&#x52A0;&#x5165;&#xFF0C;&#x5982;&#x4E0B;&#x6587;&#x4EF6;(&#x4ECE;ditto&#x6E90;&#x7801;&#x4E2D;&#x62FF;&#xFF0C;<a href="https://github.com/chutsu/ditto/">&#x6E90;&#x7801;&#x4F20;&#x9001;</a>)&#xFF1A;</p>
+<h2 id="部署发布"><a href="#部署发布" class="headerlink" title="部署发布"></a>部署发布</h2><blockquote>
+<p>上述步骤已完成wiki的搭建和运行，现在需要部署发布到github上。<br>首先你得有github账号，在上面创建一个srepository，然后clone到本地，即你的本地工程，本地工程中加入，如下文件(从ditto源码中拿，<a href="https://github.com/chutsu/ditto/">源码传送</a>)：</p>
+</blockquote>
 <ul>
-<li>sidebar.md</li>
-<li>index.html</li>
-<li>js<ul>
+<li><p>sidebar.md</p>
+</li>
+<li><p>index.html</p>
+</li>
+<li><p>js</p>
+<ul>
 <li>marked.js</li>
 <li>highlight.js</li>
-<li>ditto.js </li>
+<li>ditto.js</li>
 </ul>
 </li>
-<li>css<ul>
+<li><p>css</p>
+<ul>
 <li>github.css</li>
 <li>ditto.css</li>
 </ul>
 </li>
-<li>docs<br>&#x89C2;&#x5BDF;index.html&#xFF0C;&#x53D1;&#x73B0;&#x5F15;&#x7528;&#x7684;js&#x548C;css&#x4E0D;&#x662F;cdn&#x5C31;&#x662F;ditto&#x7684;github&#x4E0A;&#x7684;&#x5730;&#x5740;&#xFF0C;&#x6211;&#x62F7;&#x8D1D;js&#x548C;css&#x5230;&#x81EA;&#x5DF1;&#x7684;&#x5DE5;&#x7A0B;&#x6765;&#xFF0C;&#x4FDD;&#x8BC1;js&#x548C;css&#x4E0D;&#x4F1A;&#x56E0;&#x4E3A;ditto&#x66F4;&#x65B0;&#x800C;&#x53D8;&#x5316;&#xFF0C;&#x82E5;&#x8981;&#x66F4;&#x65B0;&#x6240;&#x7528;ditto&#x53EF;&#x81EA;&#x884C;clone&#x540E;&#x518D;&#x62F7;&#x8D1D;&#xFF0C;&#x53E6;&#xFF0C;cdn&#x7684;&#x5F15;&#x5165;&#x6211;&#x6539;&#x6210;&#x4E86;&#x56FD;&#x5185;&#x7684;cdn&#xFF0C;&#x63D0;&#x9AD8;&#x8BBF;&#x95EE;&#x901F;&#x5EA6;&#x3002;&#x5982;&#x4E0B;&#xFF1A;</li>
+<li><p>docs<br>观察index.html，发现引用的js和css不是cdn就是ditto的github上的地址，我拷贝js和css到自己的工程来，保证js和css不会因为ditto更新而变化，若要更新所用ditto可自行clone后再拷贝，另，cdn的引入我改成了国内的cdn，提高访问速度。如下：</p>
+  <!-- JQUERY -->
+  <script src="//cdn.bootcss.com/jquery/1.11.0/jquery.min.js"></script>
+  <script src="//cdn.bootcss.com/jqueryui/1.10.4/jquery-ui.min.js"></script>
+   <!-- MARKED -->
+  <script src="js/marked.js"></script>
+  <!-- HIGHLIGHT.JS -->
+  <link rel="stylesheet" href="css/github.css">
+  <script src="js/highlight.js"></script>
+    <script type="text/javascript"
+    src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML">
+  </script>
+  <!-- DITTO CSS -->
+  <link rel="stylesheet" href="css/ditto.css">
+  <script src="js/ditto.js"></script></li>
 </ul>
-</blockquote>
-<pre><code>&lt;!-- JQUERY --&gt;
-&lt;script src=&quot;//cdn.bootcss.com/jquery/1.11.0/jquery.min.js&quot;&gt;&lt;/script&gt;
-&lt;script src=&quot;//cdn.bootcss.com/jqueryui/1.10.4/jquery-ui.min.js&quot;&gt;&lt;/script&gt;
- &lt;!-- MARKED --&gt;
-&lt;script src=&quot;js/marked.js&quot;&gt;&lt;/script&gt;
-&lt;!-- HIGHLIGHT.JS --&gt;
-&lt;link rel=&quot;stylesheet&quot; href=&quot;css/github.css&quot;&gt;
-&lt;script src=&quot;js/highlight.js&quot;&gt;&lt;/script&gt;
-  &lt;script type=&quot;text/javascript&quot;
-  src=&quot;https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML&quot;&gt;
-&lt;/script&gt;
-&lt;!-- DITTO CSS --&gt;
-&lt;link rel=&quot;stylesheet&quot; href=&quot;css/ditto.css&quot;&gt;
-&lt;script src=&quot;js/ditto.js&quot;&gt;&lt;/script&gt;
-</code></pre><blockquote>
-<p>&#x89C2;&#x5BDF;sidebar.md&#x4E2D;&#x6709;&#x4E2A;<code>[ditto:searchbar]</code>&#x8FD9;&#x662F;&#x641C;&#x7D22;&#x6846;&#xFF0C;&#x6CA1;&#x6709;&#x5219;&#x52A0;&#x4E0A;&#xFF0C;&#x8981;&#x4F7F;&#x7528;&#x641C;&#x7D22;&#x529F;&#x80FD;&#xFF0C;&#x5219;&#x8981;&#x5728;index.html&#x4E2D;&#x4FEE;&#x6539;&#x52A0;&#x8F7D;&#x7684;js&#xFF0C;&#x8BBE;&#x7F6E;&#x4E0A;ditto.github_username&#x548C;ditto.github_repo&#x4EE5;&#x53CA;ditto.base_url&#xFF0C;&#x4F9D;&#x6B21;&#x8868;&#x793A;&#x4F60;&#x7684;github&#x7528;&#x6237;&#x540D;&#xFF0C;github&#x4E0A;&#x5DE5;&#x7A0B;&#x4ED3;&#x5E93;&#x540D;(&#x4E8C;&#x8005;&#x8D1F;&#x8D23;&#x544A;&#x8BC9;ditto&#x53BB;github&#x641C;&#x7D22;&#x9875;&#x9762;&#x4FE1;&#x606F;&#x8FDB;&#x800C;&#x5C55;&#x793A;&#x5728;wiki&#x4E0A;)&#xFF0C;github&#x7684;&#x9875;&#x9762;&#x4FEE;&#x6539;&#x5730;&#x5740;(ditto&#x7684;&#x4FEE;&#x6539;&#x662F;&#x76F4;&#x63A5;&#x8DF3;&#x8F6C;&#x5230;github&#x7684;&#x4FEE;&#x6539;&#x94FE;&#x63A5;)&#xFF0C;&#x540C;&#x65F6;&#x8FD8;&#x8BBE;&#x7F6E;&#x4E86;ditto.highlight_code&#x4E3A;true&#xFF0C;&#x8BA9;&#x641C;&#x7D22;&#x7684;&#x7ED3;&#x679C;&#x4EE3;&#x7801;&#x9AD8;&#x4EAE;&#xFF0C;&#x5982;&#x4E0B;</p>
+<blockquote>
+<p>观察sidebar.md中有个<code>[ditto:searchbar]</code>这是搜索框，没有则加上，要使用搜索功能，则要在index.html中修改加载的js，设置上ditto.github_username和ditto.github_repo以及ditto.base_url，依次表示你的github用户名，github上工程仓库名(二者负责告诉ditto去github搜索页面信息进而展示在wiki上)，github的页面修改地址(ditto的修改是直接跳转到github的修改链接)，同时还设置了ditto.highlight_code为true，让搜索的结果代码高亮，如下</p>
 </blockquote>
 <pre><code>&lt;!-- DITTO --&gt;
 &lt;script&gt;
-    $(function($) {
+    $(function($) &#123;
       // essential settings
       ditto.index = &quot;README.md&quot;,
       ditto.sidebar_file = &quot;sidebar.md&quot;,
@@ -309,15 +313,16 @@
       ditto.base_url = &quot;https://github.com/GrayOxygen/wiki/edit/master&quot;;            // &lt;------- EDIT ME!!
       // run
       ditto.run();
-    });
+    &#125;);
 &lt;/script&gt;
-</code></pre><p>&#x6253;&#x5F00;git bash&#x6267;&#x884C;<code>git push origin master</code>&#x540C;&#x6B65;&#x5230;github&#x4ED3;&#x5E93;</p>
-<p>&#x5728;github&#x7684;&#x9879;&#x76EE;&#x4E3B;&#x9875;&#x9762;&#xFF0C;&#x627E;&#x5230;setting&#x6309;&#x94AE;&#xFF0C;&#x8FDB;&#x5165;&#x66F4;&#x6539;GitHub Pages&#x9009;&#x9879;&#xFF0C;&#x5982;&#x56FE;save&#x540E;&#x63D0;&#x793A;&#x4F60;&#x5DF2;&#x53D1;&#x5E03;</p>
-<!--  –&gt;
-<p><img src="page.png" alt=""></p>
+</code></pre>
+<p>打开git bash执行<code>git push origin master</code>同步到github仓库</p>
+<p>在github的项目主页面，找到setting按钮，进入更改GitHub Pages选项，如图save后提示你已发布</p>
+
+<p><img src="/huiyang/manual/page.png"></p>
 <p>save保存你所选分支后，提示已发布，wiki已发布到公网，访问吧</p>
 <p>具体效果参考<a href="https://grayoxygen.github.io/ShineOxygenWiki">我的wiki</a></p>
--->
+
       
     </div>
 
