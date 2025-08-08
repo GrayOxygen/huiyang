@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  <entry>
+    <title>ditto+GitHub Pages搭建和发布个人wiki</title>
+    <url>/huiyang/2016/09/21/manual/</url>
+    <content><![CDATA[<p>本文介绍如何用ditto构建wiki静态站点，发布到github pages可随时随地进行访问，ditto构建的wiki支持站内查询和在线编辑，适合搭建个人wiki。</p>
+<h2 id="几种wiki搭建技术的比较"><a href="#几种wiki搭建技术的比较" class="headerlink" title="几种wiki搭建技术的比较"></a>几种wiki搭建技术的比较</h2><p>在使用ditto之前我还尝试了xwiki，gollum，MDWiki，xwiki偏向企业级，当时考虑到github pages提供免费的静态站点发布以及个人wiki的简洁性，就最终使用了hexo。MDWiki跟ditto类似，都是通过一个html来处理写作好的markdown文件，但是ditto的布局更简洁，搭建简单，用github pages就能发布到公网了。</p>
+<h2 id="下载ditto"><a href="#下载ditto" class="headerlink" title="下载ditto"></a>下载ditto</h2><blockquote>
+<p>执行命令 <code>curl -L https://git.io/v6T7r &gt; install.sh &amp;&amp; sh install.sh</code> </p>
+</blockquote>
+<blockquote>
+<p>ditto相关的文件会下载到当前目录，具体包含了：</p>
+<ul>
+<li>sidebar.md</li>
+<li>install.sh</li>
+<li>index.html</li>
+<li>docs<ul>
+<li>api.md</li>
+<li>faq.md</li>
+</ul>
+</li>
+</ul>
+</blockquote>
+<blockquote>
+<p>sidebar.md是侧边栏，install.sh启动程序，启动会自动生成上述文件，服务器默认访问的主页面即index.html，docs有api.md和faq.md，只是例子，具体是在sidebar.md引入链接，<a href=""></a>引入链接时不用写后缀名，会自动加上的。</p>
+</blockquote>
+<h2 id="写作"><a href="#写作" class="headerlink" title="写作"></a>写作</h2><blockquote>
+<p>我们在docs下面创建要写作的markdown文件，我用sublime text 3来进行markdown的写作，需装markdown相关插件</p>
+</blockquote>
+<h2 id="运行服务器"><a href="#运行服务器" class="headerlink" title="运行服务器"></a>运行服务器</h2><blockquote>
+<p>我在win7系统安装了python，在工程根目录下打开git bash或者其他命令行窗口执行server命令运行wiki，cmd用python.exe -m  http.server 8000可开启指定端口(此处设置为8000)的服务器，方便快速查看本地效果。可用其他服务器。</p>
+</blockquote>
+<h2 id="部署发布"><a href="#部署发布" class="headerlink" title="部署发布"></a>部署发布</h2><blockquote>
+<p>上述步骤已完成wiki的搭建和运行，现在需要部署发布到github上。<br>首先你得有github账号，在上面创建一个srepository，然后clone到本地，即你的本地工程，本地工程中加入，如下文件(从ditto源码中拿，<a href="https://github.com/chutsu/ditto/">源码传送</a>)：</p>
+<ul>
+<li>sidebar.md</li>
+<li>index.html</li>
+<li>js<ul>
+<li>marked.js</li>
+<li>highlight.js</li>
+<li>ditto.js </li>
+</ul>
+</li>
+<li>css<ul>
+<li>github.css</li>
+<li>ditto.css</li>
+</ul>
+</li>
+<li>docs<br>观察index.html，发现引用的js和css不是cdn就是ditto的github上的地址，我拷贝js和css到自己的工程来，保证js和css不会因为ditto更新而变化，若要更新所用ditto可自行clone后再拷贝，另，cdn的引入我改成了国内的cdn，提高访问速度。如下：</li>
+</ul>
+</blockquote>
+<pre><code>&lt;!-- JQUERY --&gt;
+&lt;script src=&quot;//cdn.bootcss.com/jquery/1.11.0/jquery.min.js&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;//cdn.bootcss.com/jqueryui/1.10.4/jquery-ui.min.js&quot;&gt;&lt;/script&gt;
+ &lt;!-- MARKED --&gt;
+&lt;script src=&quot;js/marked.js&quot;&gt;&lt;/script&gt;
+&lt;!-- HIGHLIGHT.JS --&gt;
+&lt;link rel=&quot;stylesheet&quot; href=&quot;css/github.css&quot;&gt;
+&lt;script src=&quot;js/highlight.js&quot;&gt;&lt;/script&gt;
+  &lt;script type=&quot;text/javascript&quot;
+  src=&quot;https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML&quot;&gt;
+&lt;/script&gt;
+&lt;!-- DITTO CSS --&gt;
+&lt;link rel=&quot;stylesheet&quot; href=&quot;css/ditto.css&quot;&gt;
+&lt;script src=&quot;js/ditto.js&quot;&gt;&lt;/script&gt;
+</code></pre><blockquote>
+<p>观察sidebar.md中有个<code>[ditto:searchbar]</code>这是搜索框，没有则加上，要使用搜索功能，则要在index.html中修改加载的js，设置上ditto.github_username和ditto.github_repo以及ditto.base_url，依次表示你的github用户名，github上工程仓库名(二者负责告诉ditto去github搜索页面信息进而展示在wiki上)，github的页面修改地址(ditto的修改是直接跳转到github的修改链接)，同时还设置了ditto.highlight_code为true，让搜索的结果代码高亮，如下</p>
+</blockquote>
+<pre><code>&lt;!-- DITTO --&gt;
+&lt;script&gt;
+    $(function($) &#123;
+      // essential settings
+      ditto.index = &quot;README.md&quot;,
+      ditto.sidebar_file = &quot;sidebar.md&quot;,
+      // optional settings if you want github search
+      ditto.github_username = &quot;GrayOxygen&quot;;   // &lt;------- EDIT ME!!
+      ditto.github_repo = &quot;ShineOxygenWiki&quot;;       // &lt;------- EDIT ME!!
+      ditto.highlight_code = true;    // &lt;------- EDIT ME!!
+      // where the docs are actually stored on github - so you can edit
+      // e.g. https://github.com/chutsu/ditto/edit/gh-pages
+      ditto.base_url = &quot;https://github.com/GrayOxygen/wiki/edit/master&quot;;            // &lt;------- EDIT ME!!
+      // run
+      ditto.run();
+    &#125;);
+&lt;/script&gt;
+</code></pre><p>打开git bash执行<code>git push origin master</code>同步到github仓库</p>
+<p>在github的项目主页面，找到setting按钮，进入更改GitHub Pages选项，如图save后提示你已发布</p>
+
+<p>save保存你所选分支后，提示已发布，wiki已发布到公网，访问吧</p>
+<p>具体效果参考<a href="https://grayoxygen.github.io/ShineOxygenWiki">我的wiki</a></p>
+]]></content>
+      <categories>
+        <category>wiki构建</category>
+        <category>ditto</category>
+      </categories>
+      <tags>
+        <tag>ditto</tag>
+        <tag>wiki</tag>
+        <tag>github pages</tag>
+      </tags>
+  </entry>
+</search>
