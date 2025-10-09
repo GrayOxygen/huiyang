@@ -1,6 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>Two Lives</title>
+    <url>/huiyang/2025/08/08/two-lives/</url>
+    <content><![CDATA[<p>Project:<br><strong>Two Lives: A Generative Audiovisual Installation Exploring Algorithmic Composition Through Concatenative Synthesis, L-System, and the Visualisation of Artificial and Natural Life</strong></p>
+<p>This work is a audiovisual installation themed on “life”, composed of two independently running sub-modules: artificial life and natural life. The artificial life module features an alife-based visual, together with a concatenative synthesiser. The natural life module consists of a Max patcher (presenting video of human fertilised eggs and generating melodies) and an Ableton project (receiving MIDI notes from Max to drive instrumental performance). Each sub-module is equipped with an interaction tool, allowing the audience to manipulate sound and visuals in real time through hand gestures. At the same time, internal interconnections exist within each module: In artificial life, visuals directly influence sound generation in real time; In natural life, sound drives changes in the visual effects.</p>
+<iframe src="https://player.vimeo.com/video/1108394692?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" width="320" height="180" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" referrerpolicy="strict-origin-when-cross-origin" title="20250730_demonstration_on_a_single_computer"></iframe>
+<iframe src="https://player.vimeo.com/video/1108392066?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" width="320" height="569" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" referrerpolicy="strict-origin-when-cross-origin" title="20250724_edited_sound_installation_show"></iframe>
+
+<p>performance with l system</p>
+<iframe src="https://player.vimeo.com/video/1108855783?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" width="320" height="180" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" referrerpolicy="strict-origin-when-cross-origin" title="20250810_performance_with_l_system"></iframe>]]></content>
+      <categories>
+        <category>algorithmic composition</category>
+        <category>sonification</category>
+      </categories>
+      <tags>
+        <tag>artificial life</tag>
+        <tag>max/msp</tag>
+        <tag>cv.jit</tag>
+        <tag>c++ juce</tag>
+        <tag>python</tag>
+        <tag>mediapipe</tag>
+        <tag>osc</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>ditto+GitHub Pages搭建和发布个人wiki</title>
     <url>/huiyang/2016/09/21/manual/</url>
     <content><![CDATA[<p>本文介绍如何用ditto构建wiki静态站点，发布到github pages可随时随地进行访问，ditto构建的wiki支持站内查询和在线编辑，适合搭建个人wiki。</p>
@@ -106,30 +130,6 @@
       </tags>
   </entry>
   <entry>
-    <title>Two Lives</title>
-    <url>/huiyang/2025/08/08/two-lives/</url>
-    <content><![CDATA[<p>Project:<br><strong>Two Lives: A Generative Audiovisual Installation Exploring Algorithmic Composition Through Concatenative Synthesis, L-System, and the Visualisation of Artificial and Natural Life</strong></p>
-<p>This work is a audiovisual installation themed on “life”, composed of two independently running sub-modules: artificial life and natural life. The artificial life module features an alife-based visual, together with a concatenative synthesiser. The natural life module consists of a Max patcher (presenting video of human fertilised eggs and generating melodies) and an Ableton project (receiving MIDI notes from Max to drive instrumental performance). Each sub-module is equipped with an interaction tool, allowing the audience to manipulate sound and visuals in real time through hand gestures. At the same time, internal interconnections exist within each module: In artificial life, visuals directly influence sound generation in real time; In natural life, sound drives changes in the visual effects.</p>
-<iframe src="https://player.vimeo.com/video/1108394692?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" width="320" height="180" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" referrerpolicy="strict-origin-when-cross-origin" title="20250730_demonstration_on_a_single_computer"></iframe>
-<iframe src="https://player.vimeo.com/video/1108392066?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" width="320" height="569" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" referrerpolicy="strict-origin-when-cross-origin" title="20250724_edited_sound_installation_show"></iframe>
-
-<p>performance with l system</p>
-<iframe src="https://player.vimeo.com/video/1108855783?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" width="320" height="180" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" referrerpolicy="strict-origin-when-cross-origin" title="20250810_performance_with_l_system"></iframe>]]></content>
-      <categories>
-        <category>algorithmic composition</category>
-        <category>sonification</category>
-      </categories>
-      <tags>
-        <tag>artificial life</tag>
-        <tag>max/msp</tag>
-        <tag>cv.jit</tag>
-        <tag>c++ juce</tag>
-        <tag>python</tag>
-        <tag>mediapipe</tag>
-        <tag>osc</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>2024/2025 works</title>
     <url>/huiyang/2025/10/09/works/</url>
     <content><![CDATA[<p>Project:<br><strong>Two Lives: A Generative Audiovisual Installation Exploring Algorithmic Composition Through Concatenative Synthesis, L-System, and the Visualisation of Artificial and Natural Life</strong></p>
@@ -142,9 +142,10 @@
 <li>Max&#x2F;MSP (with Java, Javascript, BEAP module)<br>This work aims to present a live music performance that supports both automatic and manual playback.<br>And I collaborated with PhD student Hal Xu, who specializes in Creative Music Practice at University Of Edinburgh, and he also has a background in Sound Design. Hal focused on the visual elements, while I was responsible for the audio and music components. On December 3rd, we delivered an engaging performance as part of his informal concert featuring audiovisual performance works.</li>
 </ul>
 <p><img src="https://raw.githubusercontent.com/GrayOxygen/blogmedia/cfa3193244e5a6c8fe25bd61ed0d57303f98ebc6/WechatIMG36044.jpg" alt="patcher1"><br><img src="https://raw.githubusercontent.com/GrayOxygen/blogmedia/cfa3193244e5a6c8fe25bd61ed0d57303f98ebc6/WechatIMG36045.jpg" alt="patcher2"></p>
-<h2 id="Audio-Programming-Music-Piece"><a href="#Audio-Programming-Music-Piece" class="headerlink" title="Audio Programming Music Piece"></a>Audio Programming Music Piece</h2><h2 id="Synthesiser"><a href="#Synthesiser" class="headerlink" title="Synthesiser"></a>Synthesiser</h2><h2 id="audio-crafting"><a href="#audio-crafting" class="headerlink" title="audio crafting"></a>audio crafting</h2><h2 id="screen"><a href="#screen" class="headerlink" title="screen"></a>screen</h2><h2 id="live-coding文章"><a href="#live-coding文章" class="headerlink" title="live coding文章"></a>live coding文章</h2><iframe src="https://drive.google.com/file/d/1YSl0pkC_Ua82OZmnJ0fXj2rRyq--5ZfQ/preview" width="320" height="180" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" referrerpolicy="strict-origin-when-cross-origin" title=""></iframe> 
+<iframe src="https://drive.google.com/file/d/1YSl0pkC_Ua82OZmnJ0fXj2rRyq--5ZfQ/preview" width="320" height="180" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" referrerpolicy="strict-origin-when-cross-origin" title=""></iframe> 
 
-<iframe src="https://player.vimeo.com/video/1108855783?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" width="320" height="180" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" referrerpolicy="strict-origin-when-cross-origin" title="20250810_performance_with_l_system"></iframe>]]></content>
+
+<h2 id="Audio-Programming-Music-Piece"><a href="#Audio-Programming-Music-Piece" class="headerlink" title="Audio Programming Music Piece"></a>Audio Programming Music Piece</h2><h2 id="Synthesiser"><a href="#Synthesiser" class="headerlink" title="Synthesiser"></a>Synthesiser</h2><h2 id="audio-crafting"><a href="#audio-crafting" class="headerlink" title="audio crafting"></a>audio crafting</h2><h2 id="screen"><a href="#screen" class="headerlink" title="screen"></a>screen</h2><h2 id="live-coding文章"><a href="#live-coding文章" class="headerlink" title="live coding文章"></a>live coding文章</h2><iframe src="https://player.vimeo.com/video/1108855783?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" width="320" height="180" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" referrerpolicy="strict-origin-when-cross-origin" title="20250810_performance_with_l_system"></iframe>]]></content>
       <categories>
         <category>works</category>
       </categories>
