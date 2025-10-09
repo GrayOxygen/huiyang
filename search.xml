@@ -132,21 +132,29 @@
   <entry>
     <title>2024/2025 works</title>
     <url>/huiyang/2025/10/09/works/</url>
-    <content><![CDATA[<p>Project:<br><strong>2024 - 2025 works</strong></p>
-<h2 id="Midi-Note-Generator"><a href="#Midi-Note-Generator" class="headerlink" title="Midi Note Generator"></a>Midi Note Generator</h2><ul>
+    <content><![CDATA[<h1 id="2024-2025-works"><a href="#2024-2025-works" class="headerlink" title="2024 - 2025 works"></a>2024 - 2025 works</h1><h3 id="Midi-Note-Generator"><a href="#Midi-Note-Generator" class="headerlink" title="Midi Note Generator"></a>Midi Note Generator</h3><ul>
 <li>Max&#x2F;MSP (with Javascript)<br>I use a <strong>quicksort algorithm</strong> to organize an array of pitches. Rather than only outputting the final sorted sequence, I convert <strong>each intermediate state of sorting the array into MIDI notes</strong> (different tracks&#x2F;instruments). As the algorithm progresses, the listener hears the pitches gradually approaching an ordered state, creating a dynamic musical process in which the evolution of order itself is experienced sonically. The process of generating in this way can continue indefinitely, and during this process, many parameter changes are supported, resulting in subtle variations in the process of generating musical notes.</li>
 </ul>
 <iframe src="https://drive.google.com/file/d/1sMtrxgKP5QhzUppbBmUg_wmOeMrTkiaH/preview" width="320" height="180" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" referrerpolicy="strict-origin-when-cross-origin" title=""></iframe>
 
-<h2 id="Live-Performance"><a href="#Live-Performance" class="headerlink" title="Live Performance"></a>Live Performance</h2><ul>
+<h3 id="AV-Live-Performance"><a href="#AV-Live-Performance" class="headerlink" title="AV Live Performance"></a>AV Live Performance</h3><ul>
 <li>Max&#x2F;MSP (with Java, Javascript, BEAP module)<br>This work aims to present a live music performance that supports <strong>both automatic and manual playback</strong>.<br>And I collaborated with PhD student Hal Xu, who specializes in Creative Music Practice at University Of Edinburgh, and he also has a background in Sound Design. Hal focused on the visual elements, while I was responsible for the audio and music components. On December 3rd, we delivered an engaging performance as part of his informal concert featuring <strong>audiovisual performance</strong> works.</li>
 </ul>
 <p><img src="https://raw.githubusercontent.com/GrayOxygen/blogmedia/cfa3193244e5a6c8fe25bd61ed0d57303f98ebc6/WechatIMG36044.jpg" alt="patcher1"><br><img src="https://raw.githubusercontent.com/GrayOxygen/blogmedia/cfa3193244e5a6c8fe25bd61ed0d57303f98ebc6/WechatIMG36045.jpg" alt="patcher2"></p>
 <iframe src="https://drive.google.com/file/u/1/d/1KPJYO7xLf8P4qHxMqUEbyrUC4Er5rA0q/preview" width="320" height="180" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" referrerpolicy="strict-origin-when-cross-origin" title=""></iframe> 
 
 <iframe src="https://drive.google.com/file/d/1YSl0pkC_Ua82OZmnJ0fXj2rRyq--5ZfQ/preview" width="320" height="180" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" referrerpolicy="strict-origin-when-cross-origin" title=""></iframe> 
+## Audio Programming Music Piece
+This piece is only written in C++.
+<iframe src="https://drive.google.com/file/u/1/d/1CF7K50zmrJ20rM4oc4Ds3wLJatSmr5UB/preview" width="320" height="180" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" referrerpolicy="strict-origin-when-cross-origin" title=""></iframe> 
 
-<h2 id="Audio-Programming-Music-Piece"><a href="#Audio-Programming-Music-Piece" class="headerlink" title="Audio Programming Music Piece"></a>Audio Programming Music Piece</h2><h2 id="Synthesiser"><a href="#Synthesiser" class="headerlink" title="Synthesiser"></a>Synthesiser</h2><h2 id="audio-crafting"><a href="#audio-crafting" class="headerlink" title="audio crafting"></a>audio crafting</h2><h2 id="screen"><a href="#screen" class="headerlink" title="screen"></a>screen</h2><h2 id="live-coding文章"><a href="#live-coding文章" class="headerlink" title="live coding文章"></a>live coding文章</h2><iframe src="https://player.vimeo.com/video/1108855783?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" width="320" height="180" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" referrerpolicy="strict-origin-when-cross-origin" title="20250810_performance_with_l_system"></iframe>]]></content>
+<h2 id="Synthesiser"><a href="#Synthesiser" class="headerlink" title="Synthesiser"></a>Synthesiser</h2><p>12&#x2F;5演出</p>
+<iframe src="https://drive.google.com/file/d/1PlvjReWx_CAXWwXPGAGGQxmmaM66V0ao/preview" width="320" height="180" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" referrerpolicy="strict-origin-when-cross-origin" title=""></iframe> 
+
+<iframe src="https://drive.google.com/file/u/1/d/1CF7K50zmrJ20rM4oc4Ds3wLJatSmr5UB/preview" width="320" height="180" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" referrerpolicy="strict-origin-when-cross-origin" title=""></iframe> 
+
+
+<h2 id="audio-crafting"><a href="#audio-crafting" class="headerlink" title="audio crafting"></a>audio crafting</h2><h2 id="screen"><a href="#screen" class="headerlink" title="screen"></a>screen</h2><h2 id="live-coding文章"><a href="#live-coding文章" class="headerlink" title="live coding文章"></a>live coding文章</h2><iframe src="https://player.vimeo.com/video/1108855783?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" width="320" height="180" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" referrerpolicy="strict-origin-when-cross-origin" title="20250810_performance_with_l_system"></iframe>]]></content>
       <categories>
         <category>works</category>
       </categories>
