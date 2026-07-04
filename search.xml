@@ -1,6 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>First Max Patcher</title>
+    <url>/huiyang/2023/10/08/first-max/</url>
+    <content><![CDATA[<h2 id="First-Max-Patcher"><a href="#First-Max-Patcher" class="headerlink" title="First Max Patcher"></a>First Max Patcher</h2><p>It’s a max for live patcher. It provides some basic sound modifications for sampling, such as speed, pitch, pitch shift, form, etc. It’s a tool for quickly transforming sound.</p>
+<p><img src="https://raw.githubusercontent.com/GrayOxygen/blogmedia/628e21652a1a99cb88d419a8e6618684551dad8c/WechatIMG36072.jpg" alt="patcher1"></p>
+<p><a href="https://maxforlive.com/library/device/9827/huiyang-glitch-slicer">Huiyang Glitch Slicer on MaxForLive</a></p>
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe 
+    src="https://drive.google.com/file/d/1I6ilv3HWo49XsHQuCnwEwtyr4df_SnCd/preview"
+    style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"
+    frameborder="0"
+    allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share"
+    referrerpolicy="strict-origin-when-cross-origin"
+    title="">
+  </iframe>
+</div>]]></content>
+      <categories>
+        <category>works</category>
+      </categories>
+      <tags>
+        <tag>max for live</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>ditto+GitHub Pages搭建和发布个人wiki</title>
     <url>/huiyang/2016/09/21/manual/</url>
     <content><![CDATA[<p>本文介绍如何用ditto构建wiki静态站点，发布到github pages可随时随地进行访问，ditto构建的wiki支持站内查询和在线编辑，适合搭建个人wiki。</p>
@@ -103,29 +126,6 @@
         <tag>ditto</tag>
         <tag>wiki</tag>
         <tag>github pages</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>First Max Patcher</title>
-    <url>/huiyang/2023/10/08/first-max/</url>
-    <content><![CDATA[<h2 id="First-Max-Patcher"><a href="#First-Max-Patcher" class="headerlink" title="First Max Patcher"></a>First Max Patcher</h2><p>It’s a max for live patcher. It provides some basic sound modifications for sampling, such as speed, pitch, pitch shift, form, etc. It’s a tool for quickly transforming sound.</p>
-<p><img src="https://raw.githubusercontent.com/GrayOxygen/blogmedia/628e21652a1a99cb88d419a8e6618684551dad8c/WechatIMG36072.jpg" alt="patcher1"></p>
-<p><a href="https://maxforlive.com/library/device/9827/huiyang-glitch-slicer">Huiyang Glitch Slicer on MaxForLive</a></p>
-<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-  <iframe 
-    src="https://drive.google.com/file/d/1I6ilv3HWo49XsHQuCnwEwtyr4df_SnCd/preview"
-    style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"
-    frameborder="0"
-    allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share"
-    referrerpolicy="strict-origin-when-cross-origin"
-    title="">
-  </iframe>
-</div>]]></content>
-      <categories>
-        <category>works</category>
-      </categories>
-      <tags>
-        <tag>max for live</tag>
       </tags>
   </entry>
   <entry>
